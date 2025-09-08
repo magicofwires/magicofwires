@@ -9,7 +9,7 @@ const WelcomeMessage = () => {
       animate={{ opacity: 1 }}
       transition={{ duration: 0.5, delay: 0.5 }}
     >
-      Welcome to InnovateApp!
+      Welcome to Magic Of Wires!
     </motion.p>
   );
 };

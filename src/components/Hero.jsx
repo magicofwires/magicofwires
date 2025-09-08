@@ -26,7 +26,7 @@ const Hero = () => {
                 transition={{ duration: 0.8, ease: 'easeOut' }}
             >
                 <h1 className="text-4xl sm:text-5xl md:text-7xl font-extrabold tracking-tighter mb-6 bg-clip-text text-transparent bg-gradient-to-r from-purple-400 via-pink-500 to-orange-400">
-                    Crafting Tomorrow's Mobile Experiences
+                    Wiring Innovation Into Mobile.
                 </h1>
                 <p className="max-w-3xl mx-auto text-lg md:text-xl text-gray-300 mb-10">
                     We specialize in building beautiful, high-performance native and cross-platform mobile applications that users love. Let's bring your vision to life.
@@ -37,7 +37,7 @@ const Hero = () => {
                             Start a Project
                         </Button>
                     </a>
-                    <Button onClick={handleNotImplemented} size="lg" variant="outline" className="text-white border-purple-400 hover:bg-purple-500/20 font-bold text-lg px-8 py-6 rounded-full shadow-lg transition-transform transform hover:scale-105">
+                    <Button onClick={handleNotImplemented} size="lg" variant="outline" className="text-black border-purple-400 hover:bg-white-500/20 font-bold text-lg px-8 py-6 rounded-full shadow-lg transition-transform transform hover:scale-105">
                         View Our Work
                     </Button>
                 </div>

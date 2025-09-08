@@ -32,7 +32,7 @@ const Header = () => {
                 <div className="flex items-center justify-between h-20">
                     <a href="#home" className="flex items-center space-x-2">
                         <Smartphone className="w-8 h-8 text-purple-400" />
-                        <span className="text-2xl font-bold tracking-tight bg-clip-text text-transparent bg-gradient-to-r from-purple-400 to-pink-500">InnovateApp</span>
+                        <span className="text-2xl font-bold tracking-tight bg-clip-text text-transparent bg-gradient-to-r from-purple-400 to-pink-500">Magic Of Wires</span>
                     </a>
 
                     <nav className="hidden md:flex items-center space-x-8">

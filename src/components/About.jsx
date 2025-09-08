@@ -16,7 +16,7 @@ const About = () => {
                             Who We Are
                         </h2>
                         <p className="text-lg text-gray-300 mb-4">
-                            InnovateApp is a passionate team of developers, designers, and strategists dedicated to the world of mobile technology. We believe that a great app is more than just code—it's an experience that connects businesses with their users in a meaningful way.
+                            Magic Of Wires is a passionate team of developers, designers, and strategists dedicated to the world of mobile technology. We believe that a great app is more than just code—it's an experience that connects businesses with their users in a meaningful way.
                         </p>
                         <p className="text-lg text-gray-300">
                             Our mission is to empower our clients by transforming their innovative ideas into powerful, user-centric mobile solutions. We thrive on challenges and are committed to excellence in every project we undertake.

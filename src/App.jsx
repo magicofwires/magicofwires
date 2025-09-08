@@ -13,10 +13,10 @@ function App() {
   return (
     <Router>
       <Helmet>
-        <title>InnovateApp | Mobile App Development Experts</title>
-        <meta name="description" content="InnovateApp specializes in crafting bespoke mobile applications for iOS and Android. Turn your ideas into powerful, user-centric mobile experiences." />
-        <meta property="og:title" content="InnovateApp | Mobile App Development Experts" />
-        <meta property="og:description" content="InnovateApp specializes in crafting bespoke mobile applications for iOS and Android. Turn your ideas into powerful, user-centric mobile experiences." />
+        <title>Magic Of Wires | Wiring Innovation Into Mobile.</title>
+        <meta name="description" content="Magic Of Wires specializes in crafting bespoke mobile applications for iOS and Android. Turn your ideas into powerful, user-centric mobile experiences." />
+        <meta property="og:title" content="Magic Of Wires | Mobile App Development Experts" />
+        <meta property="og:description" content="Magic Of Wires specializes in crafting bespoke mobile applications for iOS and Android. Turn your ideas into powerful, user-centric mobile experiences." />
       </Helmet>
       <div className="bg-slate-900 text-white min-h-screen font-sans">
         <Header />
