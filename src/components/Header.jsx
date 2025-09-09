@@ -1,6 +1,7 @@
 import React, { useState, useEffect } from 'react';
 import { motion } from 'framer-motion';
 import { Smartphone, Menu, X } from 'lucide-react';
+import mow_header from '../assets/mow_header.png';
 
 const Header = () => {
     const [isOpen, setIsOpen] = useState(false);
@@ -30,21 +31,21 @@ const Header = () => {
         >
             <div className="container mx-auto px-4 sm:px-6 lg:px-8">
                 <div className="flex items-center justify-between h-20">
-                    <a href="#home" className="flex items-center space-x-2">
-                        <Smartphone className="w-8 h-8 text-purple-400" />
-                        <span className="text-2xl font-bold tracking-tight bg-clip-text text-transparent bg-gradient-to-r from-purple-400 to-pink-500">Magic Of Wires</span>
+                    <a href="#home" className="flex items-center space-x-3">
+                        <img className="w-auto h-16 text-teal-400" src={mow_header} alt='Magic Of Wires Logo' />
+                        <span className="text-4xl font-bold tracking-tight bg-clip-text text-transparent bg-gradient-to-r from-teal-400 to-sky-600">Magic Of Wires</span>
                     </a>
 
                     <nav className="hidden md:flex items-center space-x-8">
                         {navLinks.map((link) => (
-                            <a key={link.name} href={link.href} className="text-lg font-medium text-gray-300 hover:text-purple-400 transition-colors duration-300">
+                            <a key={link.name} href={link.href} className="text-lg font-medium text-gray-300 hover:text-teal-400 transition-colors duration-300">
                                 {link.name}
                             </a>
                         ))}
                     </nav>
 
                     <div className="md:hidden">
-                        <button onClick={() => setIsOpen(!isOpen)} className="text-gray-300 hover:text-purple-400">
+                        <button onClick={() => setIsOpen(!isOpen)} className="text-gray-300 hover:text-teal-400">
                             {isOpen ? <X size={28} /> : <Menu size={28} />}
                         </button>
                     </div>
@@ -59,7 +60,7 @@ const Header = () => {
                 >
                     <nav className="flex flex-col items-center space-y-4 py-4">
                         {navLinks.map((link) => (
-                            <a key={link.name} href={link.href} onClick={() => setIsOpen(false)} className="text-lg font-medium text-gray-300 hover:text-purple-400 transition-colors duration-300">
+                            <a key={link.name} href={link.href} onClick={() => setIsOpen(false)} className="text-lg font-medium text-gray-300 hover:text-teal-400 transition-colors duration-300">
                                 {link.name}
                             </a>
                         ))}

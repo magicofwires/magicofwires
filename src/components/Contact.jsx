@@ -28,7 +28,7 @@ const Contact = () => {
                     viewport={{ once: true, amount: 0.5 }}
                     transition={{ duration: 0.5 }}
                 >
-                    <h2 className="text-3xl md:text-5xl font-extrabold tracking-tight bg-clip-text text-transparent bg-gradient-to-r from-purple-400 to-pink-500">
+                    <h2 className="text-3xl md:text-5xl font-extrabold tracking-tight bg-clip-text text-transparent bg-gradient-to-r from-teal-400 to-sky-600">
                         Let's Build Something Amazing
                     </h2>
                     <p className="mt-4 text-lg md:text-xl text-gray-400 max-w-2xl mx-auto">
@@ -59,7 +59,7 @@ const Contact = () => {
                             <Textarea id="message" placeholder="Tell us about your project..." className="bg-slate-700 border-slate-600 text-white min-h-[150px]" required />
                         </div>
                         <div className="text-center">
-                            <Button type="submit" size="lg" className="bg-purple-600 hover:bg-purple-700 text-white font-bold text-lg px-10 py-6 rounded-full shadow-lg transition-transform transform hover:scale-105 w-full sm:w-auto">
+                            <Button type="submit" size="lg" className="bg-teal-600 hover:bg-teal-700 text-white font-bold text-lg px-10 py-6 rounded-full shadow-lg transition-transform transform hover:scale-105 w-full sm:w-auto">
                                 Send Inquiry
                             </Button>
                         </div>

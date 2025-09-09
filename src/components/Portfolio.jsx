@@ -3,26 +3,16 @@ import { motion } from 'framer-motion';
 import { Card } from './ui/card';
 import { Button } from './ui/button';
 import { useToast } from './ui/use-toast';
+import keeper_label from '../assets/keeper_label.png';
 
 const projects = [
     {
-        title: "Fintech Wallet App",
-        category: "Finance",
-        description: "A secure mobile wallet for peer-to-peer payments and cryptocurrency management.",
-        imageKey: "A smartphone screen showing a modern fintech banking app interface"
-    },
-    {
-        title: "Health & Fitness Tracker",
-        category: "Wellness",
-        description: "An app that tracks workouts, nutrition, and connects users with personal trainers.",
-        imageKey: "A fitness app dashboard on a smartphone, displaying workout stats"
-    },
-    {
-        title: "E-commerce Marketplace",
-        category: "Retail",
-        description: "A multi-vendor marketplace app for discovering and purchasing unique handmade goods.",
-        imageKey: "An e-commerce app showcasing various products on a phone screen"
-    },
+        title: "Keeper: Offline Password Manager",
+        category: "Data Security",
+        description: "Keeper, an offline, secure solution for managing usernames, passwords, and other sensitive information",
+        imageKey: "A smartphone screen showing a modern fintech banking app interface",
+        image: keeper_label
+    }
 ];
 
 const Portfolio = () => {
@@ -46,7 +36,7 @@ const Portfolio = () => {
                     viewport={{ once: true, amount: 0.5 }}
                     transition={{ duration: 0.5 }}
                 >
-                    <h2 className="text-3xl md:text-5xl font-extrabold tracking-tight bg-clip-text text-transparent bg-gradient-to-r from-purple-400 to-pink-500">
+                    <h2 className="text-3xl md:text-5xl font-extrabold tracking-tight bg-clip-text text-transparent bg-gradient-to-r from-teal-400 to-sky-600">
                         Our Recent Work
                     </h2>
                     <p className="mt-4 text-lg md:text-xl text-gray-400 max-w-2xl mx-auto">
@@ -65,14 +55,14 @@ const Portfolio = () => {
                         >
                             <Card className="bg-slate-800 border-slate-700 overflow-hidden group h-full flex flex-col">
                                 <div className="relative overflow-hidden">
-                                    <img  className="w-full h-56 object-cover transition-transform duration-500 group-hover:scale-110" alt={project.title} src="https://images.unsplash.com/photo-1656909708546-cd07fe6ce1e6" />
+                                    <img  className="w-full h-56 object-contain transition-transform duration-500 group-hover:scale-110" alt={project.title} src={project.image} />
                                     <div className="absolute inset-0 bg-black/30 group-hover:bg-black/10 transition-all duration-300"></div>
                                 </div>
                                 <div className="p-6 flex flex-col flex-grow">
-                                    <p className="text-sm font-semibold text-purple-400 mb-1">{project.category}</p>
+                                    <p className="text-sm font-semibold text-teal-400 mb-1">{project.category}</p>
                                     <h3 className="text-xl font-bold text-gray-100 mb-2">{project.title}</h3>
                                     <p className="text-gray-400 flex-grow">{project.description}</p>
-                                    <Button onClick={handleNotImplemented} variant="link" className="text-purple-400 p-0 mt-4 self-start hover:text-purple-300">
+                                    <Button onClick={handleNotImplemented} variant="link" className="text-teal-400 p-0 mt-4 self-start hover:text-purple-300">
                                         View Case Study →
                                     </Button>
                                 </div>
@@ -81,7 +71,7 @@ const Portfolio = () => {
                     ))}
                 </div>
                  <div className="text-center mt-16">
-                    <Button onClick={handleNotImplemented} size="lg" variant="outline" className="text-white border-purple-400 hover:bg-purple-500/20 font-bold text-lg px-8 py-6 rounded-full shadow-lg transition-transform transform hover:scale-105">
+                    <Button onClick={handleNotImplemented} size="lg" variant="outline" className="text-black border-teal-400 hover:bg-white-500/20 font-bold text-lg px-8 py-6 rounded-full shadow-lg transition-transform transform hover:scale-105">
                         Explore More Projects
                     </Button>
                 </div>

@@ -35,13 +35,13 @@ const Footer = () => {
             <div className="container mx-auto px-4 sm:px-6 lg:px-8 py-12">
                 <div className="flex flex-col md:flex-row justify-between items-center space-y-8 md:space-y-0">
                     <div className="flex items-center space-x-2">
-                        <Smartphone className="w-7 h-7 text-purple-400" />
-                        <span className="text-xl font-bold tracking-tight bg-clip-text text-transparent bg-gradient-to-r from-purple-400 to-pink-500">Magic Of Wires</span>
+                        <Smartphone className="w-7 h-7 text-teal-400" />
+                        <span className="text-xl font-bold tracking-tight bg-clip-text text-transparent bg-gradient-to-r from-teal-400 to-sky-600">Magic Of Wires</span>
                     </div>
 
                     <div className="flex space-x-6">
                         {socialLinks.map(link => (
-                            <a key={link.name} href={link.href} onClick={() => handleLinkClick(link.href)} className="text-gray-400 hover:text-purple-400 transition-colors duration-300">
+                            <a key={link.name} href={link.href} onClick={() => handleLinkClick(link.href)} className="text-gray-400 hover:text-teal-400 transition-colors duration-300">
                                 <link.icon className="w-6 h-6" />
                                 <span className="sr-only">{link.name}</span>
                             </a>

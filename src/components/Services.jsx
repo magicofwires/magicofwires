@@ -50,7 +50,7 @@ const Services = () => {
                     viewport={{ once: true, amount: 0.5 }}
                     transition={{ duration: 0.5 }}
                 >
-                    <h2 className="text-3xl md:text-5xl font-extrabold tracking-tight bg-clip-text text-transparent bg-gradient-to-r from-purple-400 to-pink-500">
+                    <h2 className="text-3xl md:text-5xl font-extrabold tracking-tight bg-clip-text text-transparent bg-gradient-to-r from-teal-400 to-sky-600">
                         Our Expertise
                     </h2>
                     <p className="mt-4 text-lg md:text-xl text-gray-400 max-w-2xl mx-auto">
@@ -68,10 +68,10 @@ const Services = () => {
                             viewport={{ once: true, amount: 0.3 }}
                             transition={{ staggerChildren: 0.1, delay: index * 0.1 }}
                         >
-                            <Card className="bg-slate-800 border-slate-700 h-full text-center hover:border-purple-500 hover:shadow-2xl hover:shadow-purple-500/10 transition-all duration-300 transform hover:-translate-y-2">
+                            <Card className="bg-slate-800 border-slate-700 h-full text-center hover:border-teal-500 hover:shadow-2xl hover:shadow-teal-500/10 transition-all duration-300 transform hover:-translate-y-2">
                                 <CardHeader className="items-center">
-                                    <div className="p-4 bg-purple-500/10 rounded-full mb-4">
-                                        <service.icon className="w-10 h-10 text-purple-400" />
+                                    <div className="p-4 bg-teal-500/10 rounded-full mb-4">
+                                        <service.icon className="w-10 h-10 text-teal-400" />
                                     </div>
                                     <CardTitle className="text-xl font-bold text-gray-100">{service.title}</CardTitle>
                                 </CardHeader>

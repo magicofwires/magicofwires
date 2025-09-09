@@ -25,7 +25,7 @@ const Hero = () => {
                 animate={{ opacity: 1, y: 0 }}
                 transition={{ duration: 0.8, ease: 'easeOut' }}
             >
-                <h1 className="text-4xl sm:text-5xl md:text-7xl font-extrabold tracking-tighter mb-6 bg-clip-text text-transparent bg-gradient-to-r from-purple-400 via-pink-500 to-orange-400">
+                <h1 className="text-4xl sm:text-5xl md:text-7xl font-extrabold tracking-tighter mb-6 bg-clip-text text-transparent bg-gradient-to-r from-teal-400 via-sky-600 to-indigo-400">
                     Wiring Innovation Into Mobile.
                 </h1>
                 <p className="max-w-3xl mx-auto text-lg md:text-xl text-gray-300 mb-10">
@@ -33,11 +33,11 @@ const Hero = () => {
                 </p>
                 <div className="flex flex-wrap justify-center gap-4">
                      <a href="#contact">
-                        <Button size="lg" className="bg-purple-600 hover:bg-purple-700 text-white font-bold text-lg px-8 py-6 rounded-full shadow-lg transition-transform transform hover:scale-105">
+                        <Button size="lg" className="bg-teal-600 hover:bg-teal-700 text-white font-bold text-lg px-8 py-6 rounded-full shadow-lg transition-transform transform hover:scale-105">
                             Start a Project
                         </Button>
                     </a>
-                    <Button onClick={handleNotImplemented} size="lg" variant="outline" className="text-black border-purple-400 hover:bg-white-500/20 font-bold text-lg px-8 py-6 rounded-full shadow-lg transition-transform transform hover:scale-105">
+                    <Button onClick={handleNotImplemented} size="lg" variant="outline" className="text-black border-teal-400 hover:bg-white-500/20 font-bold text-lg px-8 py-6 rounded-full shadow-lg transition-transform transform hover:scale-105">
                         View Our Work
                     </Button>
                 </div>
