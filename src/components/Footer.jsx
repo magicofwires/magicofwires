@@ -1,7 +1,8 @@
 import React from 'react';
+import { Link } from 'react-router-dom';
 import { Smartphone, Linkedin, Twitter, Facebook, Instagram, Youtube } from 'lucide-react';
 import { useToast } from './ui/use-toast';
-import { onClickUrl } from './../lib/utils';
+import { openInNewTab } from './../lib/utils';
 
 const Footer = () => {
     const currentYear = new Date().getFullYear();
@@ -9,7 +10,6 @@ const Footer = () => {
 
     const handleNotImplemented = (e) => {
         e.preventDefault();
-        openInNewTab()
         toast({
             title: "Feature In Progress",
             description: "🚧 This feature isn't implemented yet—but don't worry! You can request it in your next prompt! 🚀",
@@ -18,12 +18,11 @@ const Footer = () => {
     };
 
     const handleLinkClick = (url) => {
-        e.preventDefault();
-        onClickUrl(url)
+        openInNewTab(url)
     };
 
     const socialLinks = [
-        { icon: Twitter, href: "#", name: "Twitter" },
+        { icon: Twitter, href: "https://x.com/magicofwires", name: "Twitter" },
         { icon: Linkedin, href: "https://www.linkedin.com/company/magic-of-wires/", name: "LinkedIn" },
         { icon: Facebook, href: "https://www.facebook.com/magicofwires", name: "Facebook" },
         { icon: Instagram, href: "https://www.instagram.com/magicofwires/", name: "Instagram" },
@@ -41,10 +40,10 @@ const Footer = () => {
 
                     <div className="flex space-x-6">
                         {socialLinks.map(link => (
-                            <a key={link.name} href={link.href} onClick={() => handleLinkClick(link.href)} className="text-gray-400 hover:text-teal-400 transition-colors duration-300">
+                            <Link key={link.name} onClick={() => handleLinkClick(link.href)} className="text-gray-400 hover:text-teal-400 transition-colors duration-300">
                                 <link.icon className="w-6 h-6" />
                                 <span className="sr-only">{link.name}</span>
-                            </a>
+                            </Link>
                         ))}
                     </div>
                 </div>

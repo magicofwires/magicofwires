@@ -3,7 +3,8 @@ import { motion } from 'framer-motion';
 import { Card } from './ui/card';
 import { Button } from './ui/button';
 import { useToast } from './ui/use-toast';
-import keeper_label from '../assets/keeper_label.png';
+import keeper_promo from '../assets/keeper_promo.png';
+import { openInNewTab } from './../lib/utils';
 
 const projects = [
     {
@@ -11,7 +12,8 @@ const projects = [
         category: "Data Security",
         description: "Keeper, an offline, secure solution for managing usernames, passwords, and other sensitive information",
         imageKey: "A smartphone screen showing a modern fintech banking app interface",
-        image: keeper_label
+        image: keeper_promo,
+        url: "https://play.google.com/store/apps/details?id=com.mohitum.keeper"
     }
 ];
 
@@ -24,6 +26,10 @@ const Portfolio = () => {
             description: "🚧 This feature isn't implemented yet—but don't worry! You can request it in your next prompt! 🚀",
             variant: "default",
         });
+    };
+
+    const handleLinkClick = (url) => {
+        openInNewTab(url)
     };
 
     return (
@@ -62,8 +68,8 @@ const Portfolio = () => {
                                     <p className="text-sm font-semibold text-teal-400 mb-1">{project.category}</p>
                                     <h3 className="text-xl font-bold text-gray-100 mb-2">{project.title}</h3>
                                     <p className="text-gray-400 flex-grow">{project.description}</p>
-                                    <Button onClick={handleNotImplemented} variant="link" className="text-teal-400 p-0 mt-4 self-start hover:text-purple-300">
-                                        View Case Study →
+                                    <Button onClick={() => handleLinkClick(project.url)} variant="link" className="text-teal-400 p-0 mt-4 self-start hover:text-purple-300">
+                                        Visit app on Google Play →
                                     </Button>
                                 </div>
                             </Card>
