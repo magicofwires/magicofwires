@@ -5,12 +5,14 @@ import { Input } from './ui/input';
 import { Textarea } from './ui/textarea';
 import { Label } from './ui/label';
 import { useToast } from './ui/use-toast';
+import { sendEmail } from './../lib/utils';
 
 const Contact = () => {
     const { toast } = useToast();
 
     const handleSubmit = (e) => {
         e.preventDefault();
+        sendEmail(e)
         toast({
             title: "Message Sent!",
             description: "Thanks for reaching out. We'll get back to you shortly!",
@@ -46,17 +48,17 @@ const Contact = () => {
                     <form onSubmit={handleSubmit} className="space-y-6">
                         <div className="grid grid-cols-1 sm:grid-cols-2 gap-6">
                             <div className="space-y-2">
-                                <Label htmlFor="name" className="text-white">Full Name</Label>
-                                <Input id="name" type="text" placeholder="Your Name" className="bg-slate-800 border-slate-700 text-white" required />
+                                <Label htmlFor="from_name" className="text-white">Full Name</Label>
+                                <Input id="from_name" type="text" name="from_name" placeholder="Your Name" className="bg-slate-800 border-slate-700 text-white" required />
                             </div>
                             <div className="space-y-2">
-                                <Label htmlFor="email" className="text-white">Email Address</Label>
-                                <Input id="email" type="email" placeholder="you@example.com" className="bg-slate-800 border-slate-700 text-white" required />
+                                <Label htmlFor="from_email" className="text-white">Email Address</Label>
+                                <Input id="from_email" name="from_email" type="email" placeholder="you@example.com" className="bg-slate-800 border-slate-700 text-white" required />
                             </div>
                         </div>
                         <div className="space-y-2">
-                            <Label htmlFor="message" className="text-white">Your Message</Label>
-                            <Textarea id="message" placeholder="Tell us about your project..." className="bg-slate-800 border-slate-700 text-white min-h-[150px]" required />
+                            <Label htmlFor="html_message" className="text-white">Your Message</Label>
+                            <Textarea id="html_message" name="html_message" placeholder="Tell us about your project..." className="bg-slate-800 border-slate-700 text-white min-h-[150px]" required />
                         </div>
                         <div className="text-center">
                             <Button type="submit" size="lg" className="bg-blue-500 hover:bg-orange-500 text-white font-bold text-lg px-10 py-6 rounded-full shadow-lg transition-transform transform hover:scale-105 w-full sm:w-auto">
