@@ -1,10 +1,11 @@
 import React from 'react';
+import mow_logo from '../assets/mow_logo.png';
 
 const HeroImage = () => {
   return (
     <div className='flex justify-center items-center'>
       <img 
-        src='https://imagedelivery.net/LqiWLm-3MGbYHtFuUbcBtA/119580eb-abd9-4191-b93a-f01938786700/public' 
+        src={mow_logo} 
         alt='Magic Of Wires Logo' 
       />
     </div>

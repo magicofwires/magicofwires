@@ -19,7 +19,7 @@ const Contact = () => {
     };
 
     return (
-        <section id="contact" className="py-20 md:py-32 bg-slate-800/50">
+        <section id="contact" className="py-20 md:py-32 bg-slate-900">
             <div className="container mx-auto px-4 sm:px-6 lg:px-8">
                 <motion.div
                     className="text-center mb-16"
@@ -28,10 +28,10 @@ const Contact = () => {
                     viewport={{ once: true, amount: 0.5 }}
                     transition={{ duration: 0.5 }}
                 >
-                    <h2 className="text-3xl md:text-5xl font-extrabold tracking-tight bg-clip-text text-transparent bg-gradient-to-r from-teal-400 to-sky-600">
+                    <h2 className="text-3xl md:text-5xl font-extrabold tracking-tight bg-clip-text text-transparent bg-gradient-to-r from-blue-500 to-orange-500">
                         Let's Build Something Amazing
                     </h2>
-                    <p className="mt-4 text-lg md:text-xl text-gray-400 max-w-2xl mx-auto">
+                    <p className="mt-4 text-lg md:text-xl text-white max-w-2xl mx-auto">
                         Have an idea for an app? We'd love to hear about it.
                     </p>
                 </motion.div>
@@ -46,20 +46,20 @@ const Contact = () => {
                     <form onSubmit={handleSubmit} className="space-y-6">
                         <div className="grid grid-cols-1 sm:grid-cols-2 gap-6">
                             <div className="space-y-2">
-                                <Label htmlFor="name" className="text-gray-300">Full Name</Label>
-                                <Input id="name" type="text" placeholder="Your Name" className="bg-slate-700 border-slate-600 text-white" required />
+                                <Label htmlFor="name" className="text-white">Full Name</Label>
+                                <Input id="name" type="text" placeholder="Your Name" className="bg-slate-800 border-slate-700 text-white" required />
                             </div>
                             <div className="space-y-2">
-                                <Label htmlFor="email" className="text-gray-300">Email Address</Label>
-                                <Input id="email" type="email" placeholder="you@example.com" className="bg-slate-700 border-slate-600 text-white" required />
+                                <Label htmlFor="email" className="text-white">Email Address</Label>
+                                <Input id="email" type="email" placeholder="you@example.com" className="bg-slate-800 border-slate-700 text-white" required />
                             </div>
                         </div>
                         <div className="space-y-2">
-                            <Label htmlFor="message" className="text-gray-300">Your Message</Label>
-                            <Textarea id="message" placeholder="Tell us about your project..." className="bg-slate-700 border-slate-600 text-white min-h-[150px]" required />
+                            <Label htmlFor="message" className="text-white">Your Message</Label>
+                            <Textarea id="message" placeholder="Tell us about your project..." className="bg-slate-800 border-slate-700 text-white min-h-[150px]" required />
                         </div>
                         <div className="text-center">
-                            <Button type="submit" size="lg" className="bg-teal-600 hover:bg-teal-700 text-white font-bold text-lg px-10 py-6 rounded-full shadow-lg transition-transform transform hover:scale-105 w-full sm:w-auto">
+                            <Button type="submit" size="lg" className="bg-blue-500 hover:bg-orange-500 text-white font-bold text-lg px-10 py-6 rounded-full shadow-lg transition-transform transform hover:scale-105 w-full sm:w-auto">
                                 Send Inquiry
                             </Button>
                         </div>

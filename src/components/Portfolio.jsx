@@ -33,7 +33,7 @@ const Portfolio = () => {
     };
 
     return (
-        <section id="portfolio" className="py-20 md:py-32 bg-slate-800/50">
+        <section id="portfolio" className="py-20 md:py-32 bg-slate-900">
             <div className="container mx-auto px-4 sm:px-6 lg:px-8">
                 <motion.div
                     className="text-center mb-16"
@@ -42,10 +42,10 @@ const Portfolio = () => {
                     viewport={{ once: true, amount: 0.5 }}
                     transition={{ duration: 0.5 }}
                 >
-                    <h2 className="text-3xl md:text-5xl font-extrabold tracking-tight bg-clip-text text-transparent bg-gradient-to-r from-teal-400 to-sky-600">
+                    <h2 className="text-3xl md:text-5xl font-extrabold tracking-tight bg-clip-text text-transparent bg-gradient-to-r from-blue-500 to-orange-500">
                         Our Recent Work
                     </h2>
-                    <p className="mt-4 text-lg md:text-xl text-gray-400 max-w-2xl mx-auto">
+                    <p className="mt-4 text-lg md:text-xl text-white max-w-2xl mx-auto">
                         We're proud of the solutions we've delivered. Here's a glimpse of our capabilities.
                     </p>
                 </motion.div>
@@ -62,13 +62,13 @@ const Portfolio = () => {
                             <Card className="bg-slate-800 border-slate-700 overflow-hidden group h-full flex flex-col">
                                 <div className="relative overflow-hidden">
                                     <img  className="w-full h-56 object-contain transition-transform duration-500 group-hover:scale-110" alt={project.title} src={project.image} />
-                                    <div className="absolute inset-0 bg-black/30 group-hover:bg-black/10 transition-all duration-300"></div>
+                                    <div className="absolute inset-0 bg-slate-800/30 group-hover:bg-slate-800/10 transition-all duration-300"></div>
                                 </div>
                                 <div className="p-6 flex flex-col flex-grow">
-                                    <p className="text-sm font-semibold text-teal-400 mb-1">{project.category}</p>
-                                    <h3 className="text-xl font-bold text-gray-100 mb-2">{project.title}</h3>
-                                    <p className="text-gray-400 flex-grow">{project.description}</p>
-                                    <Button onClick={() => handleLinkClick(project.url)} variant="link" className="text-teal-400 p-0 mt-4 self-start hover:text-purple-300">
+                                    <p className="text-sm font-semibold text-orange-500 mb-1">{project.category}</p>
+                                    <h3 className="text-xl font-bold text-blue-500 mb-2">{project.title}</h3>
+                                    <p className="text-white flex-grow">{project.description}</p>
+                                    <Button onClick={() => handleLinkClick(project.url)} variant="link" className="text-blue-500 p-0 mt-4 self-start hover:text-orange-500">
                                         Visit app on Google Play →
                                     </Button>
                                 </div>
@@ -77,7 +77,7 @@ const Portfolio = () => {
                     ))}
                 </div>
                  <div className="text-center mt-16">
-                    <Button onClick={handleNotImplemented} size="lg" variant="outline" className="text-black border-teal-400 hover:bg-white-500/20 font-bold text-lg px-8 py-6 rounded-full shadow-lg transition-transform transform hover:scale-105">
+                    <Button onClick={handleNotImplemented} size="lg" variant="outline" className="text-black border-blue-500 hover:bg-white-500/20 font-bold text-lg px-8 py-6 rounded-full shadow-lg transition-transform transform hover:scale-105">
                         Explore More Projects
                     </Button>
                 </div>

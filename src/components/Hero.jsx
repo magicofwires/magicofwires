@@ -17,7 +17,7 @@ const Hero = () => {
     return (
         <section id="home" className="relative min-h-screen flex items-center justify-center text-center overflow-hidden">
             <div className={`absolute inset-0 bg-gradient-to-br from-slate-900 via-purple-900/30 to-slate-900 bg-cover bg-center`}></div>
-            <div className="absolute inset-0 bg-black/40"></div>
+            <div className="absolute inset-0 bg-slate-900"></div>
 
             <motion.div
                 className="relative z-10 container mx-auto px-4 sm:px-6 lg:px-8 flex flex-col items-center"
@@ -25,19 +25,19 @@ const Hero = () => {
                 animate={{ opacity: 1, y: 0 }}
                 transition={{ duration: 0.8, ease: 'easeOut' }}
             >
-                <h1 className="text-4xl sm:text-5xl md:text-7xl font-extrabold tracking-tighter mb-6 bg-clip-text text-transparent bg-gradient-to-r from-teal-400 via-sky-600 to-indigo-400">
+                <h1 className="text-4xl sm:text-5xl md:text-7xl font-extrabold tracking-tighter mb-6 bg-clip-text text-transparent bg-gradient-to-r from-blue-500 to-orange-400">
                     Wiring Innovation Into Mobile.
                 </h1>
-                <p className="max-w-3xl mx-auto text-lg md:text-xl text-gray-300 mb-10">
+                <p className="max-w-3xl mx-auto text-lg md:text-xl text-white mb-10">
                     We specialize in building beautiful, high-performance native and cross-platform mobile applications that users love. Let's bring your vision to life.
                 </p>
                 <div className="flex flex-wrap justify-center gap-4">
                      <a href="#contact">
-                        <Button size="lg" className="bg-teal-600 hover:bg-teal-700 text-white font-bold text-lg px-8 py-6 rounded-full shadow-lg transition-transform transform hover:scale-105">
+                        <Button size="lg" className="bg-blue-500 hover:bg-orange-500 text-white font-bold text-lg px-8 py-6 rounded-full shadow-lg transition-transform transform hover:scale-105">
                             Start a Project
                         </Button>
                     </a>
-                    <Button onClick={handleNotImplemented} size="lg" variant="outline" className="text-black border-teal-400 hover:bg-white-500/20 font-bold text-lg px-8 py-6 rounded-full shadow-lg transition-transform transform hover:scale-105">
+                    <Button onClick={handleNotImplemented} size="lg" variant="outline" className="text-black border-blue-500 hover:bg-white-500/20 font-bold text-lg px-8 py-6 rounded-full shadow-lg transition-transform transform hover:scale-105">
                         View Our Work
                     </Button>
                 </div>
