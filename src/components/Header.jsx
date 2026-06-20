@@ -29,7 +29,7 @@ const Header = () => {
             animate={{ y: 0 }}
             transition={{ duration: 0.5 }}
         >
-            <div className="bg-slate-900 container mx-auto px-4 sm:px-6 lg:px-8">
+            <div className="bg-slate-900 mx-auto px-4 sm:px-6 lg:px-8">
                 <div className="flex items-center justify-between h-20">
                     <a href="#home" className="flex items-center space-x-3">
                         <img className="w-auto h-16 text-teal-400" src={mow_logo} alt='Magic Of Wires Logo' />

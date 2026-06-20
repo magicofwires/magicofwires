@@ -16,7 +16,7 @@ const About = () => {
                             Who We Are
                         </h2>
                         <p className="text-lg text-white mb-4">
-                            We are mobile app development company with 14+ years of experience creating high-performance, user-centric applications for Android and iOS. At Magic of Wires, we specialize in building scalable, intuitive mobile solutions that solve real-world problems. From architecture to deployment, we bring a strong focus on clean code, UI/UX best practices, and long-term maintainability.
+                            We are in mobile app development company with 14+ years of experience creating high-performance, user-centric applications for Android and iOS. At Magic of Wires, we specialize in building scalable, intuitive mobile solutions that solve real-world problems. From architecture to deployment, we bring a strong focus on clean code, UI/UX best practices, and long-term maintainability.
                         </p>
                         <p className="text-lg text-white">
                             Our mission is to create userful applications and empower our clients by transforming their innovative ideas into powerful, user-centric mobile solutions. We thrive on challenges and are committed to excellence in every project we undertake.
